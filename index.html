@@ -8,28 +8,39 @@ EMAIL: leth4@uci.edu
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Timothy Le">
   <meta name="description" content="portfolio of Timothy">
    <!-- you would link to an external stylesheet here! -->
+  <link rel="stylesheet" href="style.css">
    <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <title>tim's portfolio</title>
 </head>
 <body>
+  <nav class="site-nav" aria-label="Section navigation">
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header>
     <h1>Hello! I am Timothy</h1>
     <p>(feel free to call me Tim!)</p>
-    <p>Software Engineering @ UC Irvine</p>
+    <p>Software Engineering @ <a href="https://uci.edu/">UC Irvine</a></p>
   </header>
 
   <main>
-    <section>
+    <!-- About Me section -->
+    <section id="about">
       <h2>About Me</h2>
       <p>
         Hi, I'm Timothy. I am a fourth-year software engineering student! I have experience with backend engineering and research.
       </p>
     </section>
 
-    <section>
+    <!-- Education section -->
+    <section id="education">
       <h2>Education</h2>
       <h3>University of California, Irvine</h3>
       <p>Bachelor of Science in Software Engineering</p>
@@ -40,15 +51,16 @@ EMAIL: leth4@uci.edu
       <p>Sep 2022 to Jun 2024</p>
     </section>
 
-    <section>
+    <!-- Experience (keep or add projects?) section -->
+    <section id="experience">
       <h2>Experience</h2>
 
       <h3>Software Engineering Intern at Uber</h3>
+      <p class="date">Jun 2026 to Sep 2026</p>
       <p>Core Services Engineering, Trusted Identity (SWE/ML)</p>
-      <p>Jun 2026 to Sep 2026</p>
 
       <h3>Software Engineering Capstone at Microsoft</h3>
-      <p>Jan 2026 to Jun 2026</p>
+      <p class="date">Jan 2026 to Jun 2026</p>
       <p>
         Led the end-to-end design and development of a Microsoft Capstone
         collaboration portal, delivering an MVP from concept to production in
@@ -56,31 +68,36 @@ EMAIL: leth4@uci.edu
       </p>
 
       <h3>Software Engineering Intern at Uber</h3>
+      <p class="date">Jun 2025 to Sep 2025</p>
       <p>Core Services Engineering, Identity Services</p>
-      <p>Jun 2025 to Sep 2025</p>
 
       <h3>Software Engineering Intern at Uber</h3>
+      <p class="date">Jun 2024 to Sep 2024</p>
       <p>Core Services Engineering, Partner Identity</p>
-      <p>Jun 2024 to Sep 2024</p>
 
       <h3>Undergraduate Researcher at UC Berkeley</h3>
+      <p class="date">Aug 2023 to Present</p>
       <p>Development @ ChatCHW (AI/ML Research)</p>
-      <p>Aug 2023 to Present</p>
 
       <h3>Software Engineering Intern at Open Energy Dashboard</h3>
+      <p class="date">Nov 2023 to Dec 2023</p>
       <p>Open source contribution</p>
-      <p>Nov 2023 to Dec 2023</p>
 
       <h3>President at Google Developer Student Club</h3>
-      <p>Aug 2023 to Jun 2024</p>
+      <p class="date">Aug 2023 to Jun 2024</p>
 
       <h3>Software Engineering Intern at Refer Me</h3>
-      <p>May 2023 to Aug 2023</p>
+      <p class="date">May 2023 to Aug 2023</p>
     </section>
 
-    <section>
+    <!-- Contact buttons section -->
+    <section id="contact">
       <h2>Contact</h2>
-      <p>leth4@uci.edu</p>
+      <p>
+        <a class="button" href="mailto:leth4@uci.edu">Email me</a>
+        <a class="button" href="https://www.resume.lol/share/g703rle">Resume</a>
+        <a class="button" href="https://www.linkedin.com/in/timothy-le-cs/">LinkedIn</a>
+      </p>
     </section>
   </main>
 
